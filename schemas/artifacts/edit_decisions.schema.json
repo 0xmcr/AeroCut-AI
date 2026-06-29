@@ -191,7 +191,7 @@
     },
     "renderer_family": {
       "type": "string",
-      "enum": ["explainer-data", "explainer-teacher", "cinematic-trailer", "documentary-montage", "product-reveal", "screen-demo", "presenter", "animation-first"],
+      "enum": ["explainer-data", "explainer-teacher", "cinematic-trailer", "documentary", "product-reveal", "screen-demo", "presenter", "animation-first"],
       "description": "Locked at proposal stage — creative grammar for this deliverable. Preserved from proposal_packet; edit MUST NOT change without a logged decision."
     },
     "render_runtime": {

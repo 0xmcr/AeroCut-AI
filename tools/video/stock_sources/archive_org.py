@@ -47,7 +47,7 @@ _DOWNLOAD_URL = "https://archive.org/download"
 
 # Default collections to bias toward. Overridable via SearchFilters.extra
 # in a future refinement; for now these are baked in because they give
-# the best documentary-montage hit rate.
+# the best documentary hit rate.
 _DEFAULT_COLLECTIONS = ("prelinger", "opensource_movies", "home_movies")
 
 # File formats we accept, in preference order. Archive.org runs every

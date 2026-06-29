@@ -8,7 +8,7 @@ You are the **MCR Proposal Director** for a cinematic video (trailers, brand fil
 
 ## Runtime Selection (required field — `render_runtime`)
 
-Cinematic proposals must lock **both** a `renderer_family` (creative grammar: `cinematic-trailer`, `documentary-montage`, etc.) and a `render_runtime` (technical engine). Read `skills/meta/animation-runtime-selector.md` and `skills/core/hyperframes.md` for the decision matrix, and `AGENT_GUIDE.md` → "Present Both Composition Runtimes (HARD RULE)" for the governance contract.
+Cinematic proposals must lock **both** a `renderer_family` (creative grammar: `cinematic-trailer`, `documentary`, etc.) and a `render_runtime` (technical engine). Read `skills/meta/animation-runtime-selector.md` and `skills/core/hyperframes.md` for the decision matrix, and `AGENT_GUIDE.md` → "Present Both Composition Runtimes (HARD RULE)" for the governance contract.
 
 **MANDATORY workflow — present both runtimes, don't silently default:**
 

@@ -2,7 +2,7 @@
 
 Wraps the Pexels video and image search APIs behind the unified
 `StockSource` protocol. Pexels is the workhorse for the
-documentary-montage pipeline: large catalogue, fast API, free, no
+documentary pipeline: large catalogue, fast API, free, no
 attribution required, and stable URLs for cacheable downloads.
 
 Pexels exposes videos and images on two separate endpoints

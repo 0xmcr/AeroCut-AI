@@ -644,7 +644,7 @@ class VideoCompose(BaseTool):
         "explainer-data": "Explainer",
         "explainer-teacher": "Explainer",
         "cinematic-trailer": "CinematicRenderer",
-        "documentary-montage": "CinematicRenderer",
+        "documentary": "CinematicRenderer",
         "product-reveal": "Explainer",
         "screen-demo": "Explainer",
         "presenter": "TalkingHead",

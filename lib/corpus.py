@@ -1,6 +1,6 @@
 """Local clip corpus: project-scoped index of candidate video/image assets.
 
-The corpus is the heart of the documentary-montage pipeline. Instead of
+The corpus is the heart of the documentary pipeline. Instead of
 hitting stock APIs every time the agent changes its mind, we download
 once into a project-local corpus and query it offline.
 

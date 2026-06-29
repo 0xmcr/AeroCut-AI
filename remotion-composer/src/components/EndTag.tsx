@@ -37,7 +37,7 @@ const PALETTES = {
 } as const;
 
 /**
- * EndTag — a philosophical closing card for documentary-montage films.
+ * EndTag — a philosophical closing card for documentary films.
  *
  * Renders a bold, letter-spaced, uppercase line of text on a black
  * canvas with an animated underline that draws in, then receives a

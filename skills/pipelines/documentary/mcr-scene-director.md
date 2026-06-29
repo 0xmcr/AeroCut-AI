@@ -16,7 +16,7 @@ good as the slot descriptions you write.
 |-------|----------|---------|
 | Schema | `schemas/artifacts/scene_plan.schema.json` | Artifact validation |
 | Prior artifact | `state.artifacts["idea"]["brief"]` | Thematic question, tone, duration, shape |
-| Reference | `skills/pipelines/documentary-montage/mcr-executive-producer.md` | Cross-stage rules |
+| Reference | `skills/pipelines/documentary/mcr-executive-producer.md` | Cross-stage rules |
 | Tools | none yet — this stage is pure planning | — |
 
 ## Mental Model
@@ -229,7 +229,7 @@ to surprise you.
 ### 8. Record The Shot List
 
 Use the `scene_plan.schema.json` artifact with one `scene` per slot.
-For this pipeline, put documentary-montage-specific fields inside
+For this pipeline, put documentary-specific fields inside
 `metadata` on each scene. The canonical shape:
 
 ```json
@@ -251,7 +251,7 @@ For this pipeline, put documentary-montage-specific fields inside
     }
   ],
   "metadata": {
-    "pipeline": "documentary-montage",
+    "pipeline": "documentary",
     "shape": "list",
     "tone": "elegiac",
     "thematic_question": "What does rain show you about a city?",

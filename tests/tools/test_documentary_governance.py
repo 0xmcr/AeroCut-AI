@@ -105,7 +105,7 @@ def test_corpus_builder_rejects_unavailable_pinned_sources(monkeypatch, tmp_path
 
 
 def test_documentary_renderer_family_maps_to_remotion():
-    assert VideoCompose._get_composition_id("documentary-montage") == "CinematicRenderer"
+    assert VideoCompose._get_composition_id("documentary") == "CinematicRenderer"
 
 
 def test_video_compose_surfaces_all_three_runtimes():

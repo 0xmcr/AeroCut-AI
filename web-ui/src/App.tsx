@@ -649,9 +649,9 @@ export default function App() {
                     onChange={e => setSelectedPipeline(e.target.value)}
                     style={{ background: "#110e21", color: "#fff" }}
                   >
-                    {pipelines.map(pipe => (
+                    {pipelines.filter(pipe => pipe.name !== 'framework-smoke').map(pipe => (
                       <option key={pipe.name} value={pipe.name}>
-                        {pipe.name} ({pipe.stability})
+                        {pipe.name}
                       </option>
                     ))}
                   </select>

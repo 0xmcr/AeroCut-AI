@@ -1,7 +1,7 @@
 """Corpus builder: fan out across stock sources, download, thumb, embed, index.
 
 This is the tool the agent calls to populate a local clip corpus for
-the documentary-montage pipeline. It is deliberately the ONLY place
+the documentary pipeline. It is deliberately the ONLY place
 where adapters, embedding, and the `Corpus` class meet — everything
 downstream (retrieval, selection, edit planning) reads from the corpus
 on disk and never touches sources directly.
@@ -112,7 +112,7 @@ class CorpusBuilder(BaseTool):
         "resumable": True,
     }
     best_for = [
-        "documentary-montage retrieval corpora",
+        "documentary retrieval corpora",
         "topic-based offline clip indexing",
         "collecting candidate B-roll without repeated API calls per edit",
     ]

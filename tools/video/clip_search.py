@@ -1,6 +1,6 @@
 """Clip search: unified retrieval interface over a local clip corpus.
 
-This is the tool the documentary-montage director calls at edit time.
+This is the tool the documentary director calls at edit time.
 It loads a corpus built by `corpus_builder` and exposes every
 retrieval operation the agent needs through a single dispatch
 interface.

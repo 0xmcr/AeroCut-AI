@@ -158,7 +158,7 @@ def test_compose_stage_references_runtime_routing(manifest_path: Path):
         f"{skill_ref} does not mention HyperFrames at all. Even on deferred "
         f"pipelines, the mcr-compose-director must name HyperFrames so the agent "
         f"can surface the constraint to the user rather than silently pick "
-        f"Remotion. See documentary-montage or talking-head mcr-compose-director "
+        f"Remotion. See documentary or talking-head mcr-compose-director "
         f"for the deferred-pipeline template."
     )
 

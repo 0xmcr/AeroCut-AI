@@ -56,7 +56,7 @@ appeared in the edit, STOP and ask. Do not render over a contract
 violation.
 
 Also confirm that `edit_decisions.renderer_family` is locked to
-`documentary-montage` and that the chosen render engine preserves that
+`documentary` and that the chosen render engine preserves that
 decision. For this repo's governance model, `video_compose` is
 Remotion-first on `operation="render"`, even for footage-led pieces.
 
@@ -106,7 +106,7 @@ render time — consult the tool's `agent_skills` if available before
 writing the call. Do not invent parameters.
 
 `edit_decisions_with_renderer_family` means the normal edit artifact
-with `renderer_family = "documentary-montage"` preserved intact.
+with `renderer_family = "documentary"` preserved intact.
 
 ### 3. Apply Grade Via LUT, Not Per Clip
 
@@ -315,9 +315,9 @@ Record verifications in `render_report.verification_notes`.
     "Silence window 54-56s confirmed (music -60dB)",
     "Last frame fades to black at 89.0s"
   ],
-  "render_grammar": "documentary-montage",
+  "render_grammar": "documentary",
   "metadata": {
-    "pipeline": "documentary-montage",
+    "pipeline": "documentary",
     "canvas": { "width": 1920, "height": 1080 },
     "letterbox": "2.35:1",
     "lut": "warm_film_100",

@@ -415,7 +415,7 @@ montage-specific fields live in `metadata`:
     }
   ],
   "metadata": {
-    "pipeline": "documentary-montage",
+    "pipeline": "documentary",
     "corpus_dir": "projects/<name>/corpus",
     "corpus_stats": { "rows": 157, "per_source": {"pexels": 98, "archive_org": 52, "nasa": 7} },
     "rejected_picks": [
@@ -459,7 +459,7 @@ pick feels wrong and needs to reach for the #2 option.
   wins every slot and the montage becomes a slideshow of one image.
 - **Quiet music substitution.** User said "none", agent generated
   anyway because "the edit felt thin". This is a major change and
-  needs approval — see `skills/pipelines/documentary-montage/mcr-executive-producer.md`
+  needs approval — see `skills/pipelines/documentary/mcr-executive-producer.md`
   cross-stage rules.
 - **Growing the corpus unboundedly.** Two growth passes per weak slot
   is the limit. Beyond that, the footage probably doesn't exist in

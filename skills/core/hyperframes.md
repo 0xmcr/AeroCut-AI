@@ -82,7 +82,7 @@ dedicated parity work:
 
 - `remotion_caption_burn` (word-by-word burned captions)
 - `TalkingHead` composition (avatar/lip-sync presenter)
-- Existing documentary-montage end-tag overlay stack (relies on specific
+- Existing documentary end-tag overlay stack (relies on specific
   Remotion components)
 - Anything that assumes assets are staged under `remotion-composer/public/`
   and consumed by existing React scene components
@@ -436,7 +436,7 @@ the `deterministicFonts.ts` mapping table. Safe bets: `Outfit`,
 | `screen-demo` | Wave 1 — HyperFrames viable for synthetic product UI; `TerminalScene` (Remotion) remains preferred for terminal-specific demos |
 | `cinematic` | Wave 2 |
 | `hybrid` | Wave 2 |
-| `documentary-montage` | Wave 2 |
+| `documentary` | Wave 2 |
 | `talking-head` | Deferred — depends on TalkingHead parity |
 | `avatar-spokesperson` | Deferred — depends on TalkingHead parity |
 | `clip-factory`, `podcast-repurpose`, `localization-dub` | Deferred — current compose paths rely on Remotion caption burn |

@@ -9,9 +9,9 @@ and how long it should run.
 
 ## Runtime Selection (MANDATORY — present the constraint, don't silently pick)
 
-Lock `render_runtime = "remotion"`. **HyperFrames is NOT a valid runtime on this pipeline in Phase 1** — documentary-montage depends on the Remotion `CinematicRenderer` composition and its ProRes-4444 alpha end-tag overlay stack, neither of which has HyperFrames parity.
+Lock `render_runtime = "remotion"`. **HyperFrames is NOT a valid runtime on this pipeline in Phase 1** — documentary depends on the Remotion `CinematicRenderer` composition and its ProRes-4444 alpha end-tag overlay stack, neither of which has HyperFrames parity.
 
-Per AGENT_GUIDE.md → "Present Both Composition Runtimes (HARD RULE)": do NOT silently default. Tell the user: "HyperFrames is available on your machine as an alternative runtime, but documentary-montage depends on the Remotion CinematicRenderer + end-tag overlay stack, so remotion is the only viable choice here — OK to proceed?" Record a `render_runtime_selection` decision in `decision_log` listing both runtimes in `options_considered`, with hyperframes `rejected_because: "CinematicRenderer + end-tag overlay parity deferred on documentary-montage"`.
+Per AGENT_GUIDE.md → "Present Both Composition Runtimes (HARD RULE)": do NOT silently default. Tell the user: "HyperFrames is available on your machine as an alternative runtime, but documentary depends on the Remotion CinematicRenderer + end-tag overlay stack, so remotion is the only viable choice here — OK to proceed?" Record a `render_runtime_selection` decision in `decision_log` listing both runtimes in `options_considered`, with hyperframes `rejected_because: "CinematicRenderer + end-tag overlay parity deferred on documentary"`.
 
 ## Prerequisites
 
@@ -98,7 +98,7 @@ defer this — it becomes an expensive surprise at the asset stage.
 
 ### 5. Note End-Tag Intent (MANDATORY)
 
-Every documentary-montage film closes on a philosophical end-tag — one
+Every documentary film closes on a philosophical end-tag — one
 short, abstract line that gives the whole thing meaning. It is rendered
 as a Remotion end-card ("shining underlined tag" register — bold weight,
 letter-spaced, animated underline).

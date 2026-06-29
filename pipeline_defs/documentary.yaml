@@ -1,4 +1,4 @@
-name: documentary-montage
+name: documentary
 version: "1.0"
 description: >
   Retrieval-first thematic montage pipeline. Builds a semantic corpus of real-world
@@ -17,7 +17,7 @@ reference_input:
 
 orchestration:
   mode: mcr-executive-producer
-  skill: pipelines/documentary-montage/mcr-executive-producer
+  skill: pipelines/documentary/mcr-executive-producer
   budget_default_usd: 1.00
   max_revisions_per_stage: 3
   max_send_backs: 2
@@ -30,12 +30,12 @@ extensions:
   custom_tools: false
 
 required_skills:
-  - pipelines/documentary-montage/mcr-executive-producer
-  - pipelines/documentary-montage/mcr-idea-director
-  - pipelines/documentary-montage/mcr-scene-director
-  - pipelines/documentary-montage/mcr-asset-director
-  - pipelines/documentary-montage/mcr-edit-director
-  - pipelines/documentary-montage/mcr-compose-director
+  - pipelines/documentary/mcr-executive-producer
+  - pipelines/documentary/mcr-idea-director
+  - pipelines/documentary/mcr-scene-director
+  - pipelines/documentary/mcr-asset-director
+  - pipelines/documentary/mcr-edit-director
+  - pipelines/documentary/mcr-compose-director
   - meta/reviewer
   - meta/checkpoint-protocol
 
@@ -44,7 +44,7 @@ compatible_playbooks:
 
 stages:
   - name: idea
-    skill: pipelines/documentary-montage/mcr-idea-director
+    skill: pipelines/documentary/mcr-idea-director
     produces:
       - brief
     tools_available: []
@@ -64,7 +64,7 @@ stages:
       - end_tag_plan present in metadata (text, palette, duration, mode — may be `null` ONLY with explicit user opt-out note)
 
   - name: scene_plan
-    skill: pipelines/documentary-montage/mcr-scene-director
+    skill: pipelines/documentary/mcr-scene-director
     required_artifacts_in:
       - brief
     produces:
@@ -84,7 +84,7 @@ stages:
       - Sum of target_hold_seconds within 10% of brief.duration_seconds
 
   - name: assets
-    skill: pipelines/documentary-montage/mcr-asset-director
+    skill: pipelines/documentary/mcr-asset-director
     required_artifacts_in:
       - scene_plan
       - brief
@@ -116,7 +116,7 @@ stages:
       - metadata.corpus_stats present (standard path) OR metadata.search_stats present (fast path)
 
   - name: edit
-    skill: pipelines/documentary-montage/mcr-edit-director
+    skill: pipelines/documentary/mcr-edit-director
     required_artifacts_in:
       - scene_plan
       - asset_manifest
@@ -126,7 +126,7 @@ stages:
     checkpoint_required: true
     human_approval_default: true
     review_focus:
-      - renderer_family is locked to documentary-montage
+      - renderer_family is locked to documentary
       - Hero slots hold longest; mid-sequence cutaways shortest
       - No two adjacent cuts share subject AND scale
       - Transition vocabulary is at most 4 distinct values
@@ -139,7 +139,7 @@ stages:
       - Timeline duration within 10% of brief.duration_seconds
 
   - name: compose
-    skill: pipelines/documentary-montage/mcr-compose-director
+    skill: pipelines/documentary/mcr-compose-director
     required_artifacts_in:
       - edit_decisions
       - asset_manifest
